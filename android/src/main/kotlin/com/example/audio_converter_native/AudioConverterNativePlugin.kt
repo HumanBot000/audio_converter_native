@@ -146,7 +146,7 @@ class AudioConverterNativePlugin : FlutterPlugin, MethodCallHandler {
             val fileSize = file.length()
             val duration = estimateAudioDuration(fileSize)
             
-            val mediaInfo = mapOf(
+            val mediaInfo = mapOf<String, Any>(
                 "success" to true,
                 "filePath" to filePath,
                 "fileSize" to fileSize,
